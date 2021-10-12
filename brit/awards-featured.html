@@ -1,0 +1,9 @@
+<div class="row">
+		<div class="col-12">
+      <div class="d-flex>
+        <div class="flex-shrink-0">
+          <a href="/awards" alt="Brit Awards"><%# IfEmpty(Eval("Brit_AwardsImage"),"","<div class=\"media-center text-center\"><img class=\"mx-auto d-block img-fluid brit-awards\" style="max-height:57px" src=\""+ GetAttachmentUrlByGUID(Eval("Brit_AwardsImage"), "BioPic") +"\" alt=\""+Eval("Brit_AwardsTitle",true)+" \" /></div>") %>
+<div class="flex-grow-1>
+          <div class="brit-awards-title-featured"><%# Eval("Brit_AwardsSponsorTitle") %> | <%# Eval("Brit_AwardsTitle") %> ></div></a>
+       </div>
+	</div>
